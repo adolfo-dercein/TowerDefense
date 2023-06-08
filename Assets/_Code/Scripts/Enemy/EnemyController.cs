@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
 
     void DestroyWhenOutside()
     {
-        if(gameObject.transform.position.z > 7)
+        if(gameObject.transform.position.z > 8)
         {
             Destroy(gameObject);
         }

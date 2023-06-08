@@ -20,6 +20,6 @@ public class EnemySpawnerController : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemy);
+        Instantiate(enemy, transform);
     }
 }
