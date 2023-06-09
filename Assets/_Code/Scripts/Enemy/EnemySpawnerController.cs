@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawnerController : MonoBehaviour
@@ -20,6 +21,8 @@ public class EnemySpawnerController : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemy);
+        GameObject newEnemy = Instantiate(enemy);
+        EnemyController enemyController = newEnemy.GetComponent<EnemyController>();
+        enemyController.health = 3;
     }
 }

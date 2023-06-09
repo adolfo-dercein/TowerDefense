@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour
 
     private float minSpeed = Parameters.EnemyParameters.MinSpeed;
     private float maxSpeed = Parameters.EnemyParameters.MaxSpeed;
-    private float health = Parameters.EnemyParameters.InitialHealth;
+    public float health = Parameters.EnemyParameters.InitialHealth;
 
     private float speed;
 
