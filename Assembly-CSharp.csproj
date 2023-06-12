@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Code\Scripts\Map\WaypointController.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\Parameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Tower\BulletController.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemyController.cs" />

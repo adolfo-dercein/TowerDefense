@@ -6,6 +6,7 @@ public class EnemySpawnerController : MonoBehaviour
 {
     public GameObject enemy;
     private float spawnFrecuency = Parameters.EnemyParameters.SpawnFrecuency;
+    public GameObject firstWaypoint;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,9 @@ public class EnemySpawnerController : MonoBehaviour
     void SpawnEnemy()
     {
         GameObject newEnemy = Instantiate(enemy);
+
         EnemyController enemyController = newEnemy.GetComponent<EnemyController>();
         enemyController.health = 3;
+        enemyController.firstWaypoint = firstWaypoint;
     }
 }

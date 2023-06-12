@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 8493131232984493910}
+  firstWaypoint: {fileID: 0}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!54 &8493131232984493910
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -6,13 +6,16 @@ public class EnemyController : MonoBehaviour
 
     private float minSpeed = Parameters.EnemyParameters.MinSpeed;
     private float maxSpeed = Parameters.EnemyParameters.MaxSpeed;
-    public float health = Parameters.EnemyParameters.InitialHealth;
+    private float health = Parameters.EnemyParameters.InitialHealth;
+    public GameObject firstWaypoint;
+    public Vector3 direction;
 
     private float speed;
 
     void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
+        direction = (firstWaypoint.transform.position - transform.position).normalized;
     }
 
     void Update()
@@ -23,7 +26,7 @@ public class EnemyController : MonoBehaviour
 
     void MoveForward()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime);
     }
 
     void DestroyWhenOutside()
