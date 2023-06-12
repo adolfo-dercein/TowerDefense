@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawnerController : MonoBehaviour
@@ -22,6 +23,9 @@ public class EnemySpawnerController : MonoBehaviour
     void SpawnEnemy()
     {
         GameObject newEnemy = Instantiate(enemy);
-        newEnemy.GetComponent<EnemyController>().firstWaypoint = firstWaypoint;
+
+        EnemyController enemyController = newEnemy.GetComponent<EnemyController>();
+        enemyController.health = 3;
+        enemyController.firstWaypoint = firstWaypoint;
     }
 }
