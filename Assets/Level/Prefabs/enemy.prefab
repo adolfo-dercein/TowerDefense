@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8274588990897832605}
   - component: {fileID: 5668469458930190892}
   - component: {fileID: 8493131232984493910}
+  - component: {fileID: 7107712100512599113}
   m_Layer: 0
   m_Name: enemy
-  m_TagString: Untagged
+  m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 8493131232984493910}
+  firstWaypoint: {fileID: 0}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!54 &8493131232984493910
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -116,3 +119,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &7107712100512599113
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626215573222679368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 0.65287226
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.32643613, z: 0}
