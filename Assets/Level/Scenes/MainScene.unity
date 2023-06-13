@@ -1300,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TorchHighPoly (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8280556129950185922, guid: 22f72f122dfecfe41bc301f345b57a5d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f72f122dfecfe41bc301f345b57a5d, type: 3}
 --- !u!1 &250896620
@@ -6523,7 +6527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498650, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.087
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 498650, guid: 5c00c5f03c23f3b44af6d75077362432, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11393,7 +11397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5277103586375100980, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Name
-      value: Tower12
+      value: TowerCannon1
       objectReference: {fileID: 0}
     - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11402,7 +11406,7 @@ PrefabInstance:
     - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 7555185752953191562, guid: 0ffae56a903ad1b4391d2b5ea9b728c9, type: 3}
+      objectReference: {fileID: 2100000, guid: 942fdfa4b085442378df574863247836, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
 --- !u!1 &2020301116
@@ -11890,10 +11894,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5277103586375100980, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Name
-      value: Tower11
+      value: TowerCannon2
       objectReference: {fileID: 0}
     - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 942fdfa4b085442378df574863247836, type: 2}
+    - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 942fdfa4b085442378df574863247836, type: 2}
     m_RemovedComponents: []
