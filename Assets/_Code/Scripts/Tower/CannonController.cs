@@ -6,6 +6,10 @@ public class CannonController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bullet;
     public float rotationSpeed = 5f;
+    public float bulletSpeed = 5f;
+    public float range = 3f;
+    private float shootingTimer = 1f;
+    public float shootingInterval = 1f;
 
     private void Start()
     {
@@ -28,6 +32,8 @@ public class CannonController : MonoBehaviour
             }
         }
 
+        shootingTimer += Time.deltaTime;
+
         if (closestEnemy != null)
         {
             Vector3 direction = closestEnemy.transform.position - gameObject.transform.position;
@@ -35,21 +41,22 @@ public class CannonController : MonoBehaviour
 
             Quaternion desiredRotation = Quaternion.LookRotation(direction);
 
-            float rotationSpeed = 5f; // Adjust the speed of rotation as needed
             gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
 
-            if (closestDistance < 5 && bullet == null )
+            if (closestDistance < range && bullet == null && shootingTimer >= shootingInterval )
             {
-               
-                bullet = Instantiate(bulletPrefab);
+                shootingTimer = 0;
+
+                 bullet = Instantiate(bulletPrefab);
                 BulletController bulletController = bullet.GetComponent<BulletController>();
                 if (bulletController != null)
                 {
                     bulletController.initialPos = transform.position;
-                    bulletController.speed = 5f;
+                    bulletController.speed = bulletSpeed;
                     bulletController.direction = desiredRotation;
                     bulletController.target = closestEnemy;
                     bulletController.damage = 1;
+                    bulletController.range = range;
                 }
             }
         }
