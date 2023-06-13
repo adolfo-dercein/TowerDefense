@@ -9,11 +9,11 @@ public class BulletController : MonoBehaviour
     public Vector3 initialPos;
     public Quaternion direction;
     public int damage;
+    public float range;
     // Start is called before the first frame update
     void Start()
     {
         gameObject.transform.position = initialPos;
-        //gameObject.transform.rotation = direction;
         gameObject.transform.LookAt(target.transform.position);
     }
 
@@ -21,7 +21,8 @@ public class BulletController : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (transform.position.x > 10 || transform.position.x < -10 || transform.position.z > 10 || transform.position.z < -10)
+        float distance = Vector3.Distance(gameObject.transform.position, initialPos);
+        if (distance > range)
         {
             Destroy(gameObject);
         }
