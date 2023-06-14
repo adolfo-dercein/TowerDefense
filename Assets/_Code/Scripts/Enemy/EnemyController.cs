@@ -1,9 +1,12 @@
 using Assets._Code.Scripts.Enemy;
 using Assets._Code.Scripts.Enemy.States;
+using Assets._Code.Scripts.Util;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameManagerController gameManagerController;
+
     EnemyBaseState currentState;
 
     public EnemyAliveState AliveState = new EnemyAliveState();
@@ -14,6 +17,8 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        gameManagerController = GameObject.FindGameObjectWithTag(Tags.GameManager).GetComponent<GameManagerController>();
+
         currentState = AliveState;
         currentState.EnterState(this);
     }
