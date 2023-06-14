@@ -51,10 +51,8 @@ public class CannonController : MonoBehaviour
                 if (bulletController != null)
                 {
                     bulletController.initialPos = transform.position;
-                    bulletController.speed = 5f;
                     bulletController.direction = desiredRotation;
                     bulletController.target = closestEnemy;
-                    bulletController.damage = 1;
                 }
             }
         }
