@@ -4,18 +4,13 @@ using UnityEngine;
 public class EnemySpawnerController : MonoBehaviour
 {
     public GameObject enemy;
-    private float spawnFrecuency = Parameters.EnemyParameters.SpawnFrecuency;
+    private float spawnFrecuency;
+    public GameObject firstWaypoint;
 
-    // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 0, spawnFrecuency);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        spawnFrecuency = Parameters.EnemyParameters.SpawnFrecuency;
+        InvokeRepeating("SpawnEnemy", 2, spawnFrecuency);
     }
 
     void SpawnEnemy()

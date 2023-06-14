@@ -56,10 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Code\Scripts\Map\WaypointController.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\Parameters.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletController.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemySpawnerController.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\CannonController.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\EnemyParameters.cs" />
+    <Compile Include="Assets\_Code\Scripts\Enemy\EnemyBaseState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyAliveState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyDeathState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyWinState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Util\Tags.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\Bullet\States\BulletFireState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\Bullet\States\BulletDestroyedState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletBaseState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Util\Parameters\CannonParameters.cs" />
+    <Compile Include="Assets\_Code\Scripts\Util\Parameters\BulletParameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
