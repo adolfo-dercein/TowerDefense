@@ -7077,7 +7077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5277103586375100980, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Name
-      value: TowerCannon1
+      value: Tower11
       objectReference: {fileID: 0}
     - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7302,7 +7302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5277103586375100980, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Name
-      value: TowerCannon2
+      value: Tower11
       objectReference: {fileID: 0}
     - target: {fileID: 7088807243098991807, guid: e720a19e2bb2ad44588647ad694c61c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
