@@ -1,39 +1,41 @@
+using Assets._Code.Scripts.Enemy;
+using Assets._Code.Scripts.Enemy.States;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    EnemyBaseState currentState;
+
+    public EnemyAliveState AliveState = new EnemyAliveState();
+    public EnemyDeathState DeathState = new EnemyDeathState();
+    public EnemyWinState WinState = new EnemyWinState();
+
     public Rigidbody body;
-
-    private float minSpeed = Parameters.EnemyParameters.MinSpeed;
-    private float maxSpeed = Parameters.EnemyParameters.MaxSpeed;
-    public float health = Parameters.EnemyParameters.InitialHealth;
-    public GameObject firstWaypoint;
-    public Vector3 direction;
-
-    private float speed;
 
     void Start()
     {
-        speed = Random.Range(minSpeed, maxSpeed);
-        direction = (firstWaypoint.transform.position - transform.position).normalized;
+        currentState = AliveState;
+        currentState.EnterState(this);
     }
 
     void Update()
     {
-        MoveForward();
-        DestroyWhenOutside();
+        currentState.UpdateState(this);
     }
 
-    void MoveForward()
+    public void SwitchState(EnemyBaseState state)
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        currentState = state;
+        state.EnterState(this);
     }
 
-    void DestroyWhenOutside()
+    public void DestroyGameObject()
     {
-        if(gameObject.transform.position.z > 7)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        currentState.OnTriggerEnter(this, other);
     }
 }
