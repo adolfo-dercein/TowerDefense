@@ -8,8 +8,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
-    <ProjectGuid>{28866EB0-7993-C171-348D-8535A8E3480D}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,6 +74,7 @@
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletBaseState.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\CannonParameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\BulletParameters.cs" />
+    <Compile Include="Assets\_Code\Scripts\Tower\BulletController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
