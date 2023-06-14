@@ -8,7 +8,7 @@ namespace Assets._Code.Scripts.Enemy.States
     {
         public GameObject firstWaypoint;
         public Vector3 direction;
-
+         
         private float speed;
         private float minSpeed = Parameters.EnemyParameters.MinSpeed;
         private float maxSpeed = Parameters.EnemyParameters.MaxSpeed;

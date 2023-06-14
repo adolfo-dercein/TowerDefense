@@ -73,6 +73,7 @@
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletBaseState.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\CannonParameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\BulletParameters.cs" />
+    <Compile Include="Assets\_Code\Scripts\GameManager\GameManagerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
