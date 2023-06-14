@@ -22,14 +22,13 @@ public class WaypointController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
-        if (nextWaypoint != null)
-        {
-            enemyController.direction = (nextWaypoint.transform.position - transform.position).normalized;
-        } else
-        {
-            enemyController.direction = Vector3.forward;
-        }
+        //EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
+        //if (nextWaypoint != null)
+        //{
+        //    enemyController.direction = (nextWaypoint.transform.position - transform.position).normalized;
+        //} else
+        //{
+        //    enemyController.direction = Vector3.forward;
+        //}
     }
-
 }

@@ -1,3 +1,4 @@
+using Assets._Code.Scripts.Util;
 using UnityEngine;
 
 public class CannonController : MonoBehaviour
@@ -11,15 +12,13 @@ public class CannonController : MonoBehaviour
     private float shootingTimer = 1f;
     public float shootingInterval = 1f;
 
-    private void Start()
-    {
-    }
+    private void Start() { }
 
     private void Update()
     {
         float closestDistance = Mathf.Infinity;
 
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(Tags.Enemy);
 
         foreach (GameObject enemy in enemies)
         {
@@ -52,11 +51,8 @@ public class CannonController : MonoBehaviour
                 if (bulletController != null)
                 {
                     bulletController.initialPos = transform.position;
-                    bulletController.speed = bulletSpeed;
                     bulletController.direction = desiredRotation;
                     bulletController.target = closestEnemy;
-                    bulletController.damage = 1;
-                    bulletController.range = range;
                 }
             }
         }
