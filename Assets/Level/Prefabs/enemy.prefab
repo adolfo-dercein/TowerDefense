@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8274588990897832605}
   - component: {fileID: 5668469458930190892}
   - component: {fileID: 8493131232984493910}
+  - component: {fileID: 2676452896055809773}
   - component: {fileID: 3202878142754340530}
   m_Layer: 0
   m_Name: enemy
@@ -29,10 +30,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7626215573222679368}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4033441, z: -0.03287033}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 5187185168944604378}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
