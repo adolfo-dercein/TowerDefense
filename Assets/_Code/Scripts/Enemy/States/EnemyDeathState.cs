@@ -6,7 +6,8 @@ namespace Assets._Code.Scripts.Enemy.States
 
         public override void EnterState(EnemyController enemyController)
         {
-            enemyController.gameManagerController.AddEnemyDeathCount();
+            enemyController.gameManagerController.AddEnemyKillCount();
+            enemyController.gameManagerController.AddCoinCount();
 
             enemyController.DestroyGameObject();
             //TODO: play sound 

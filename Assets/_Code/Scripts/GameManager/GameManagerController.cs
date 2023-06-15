@@ -3,29 +3,29 @@ using UnityEngine.UI;
 
 public class GameManagerController : MonoBehaviour
 {
-    public Text enemiesPassCountText;
-    public Text enemiesDeathsCountText;
-    public Text coinsCountText;
+    public Text enemiesPassCount;
+    public Text enemyKillCount;
+    public Text coinsCount;
 
-    private int enemiesPassCount = 0;
-    private int enemiesDeathsCount = 0;
-    private int coinsCount = 0;
+    private int _enemyPassCount = 0;
+    private int _enemyKillCount = 0;
+    private int _coinsCount = 0;
+
+    public void AddEnemyKillCount()
+    {
+        _enemyKillCount++;
+        enemyKillCount.text = _enemyKillCount.ToString();
+    }
 
     public void AddEnemyPassCount()
     {
-        enemiesPassCount++;
-        enemiesPassCountText.text = enemiesPassCount.ToString();
-    }
-
-    public void AddEnemyDeathCount()
-    {
-        enemiesDeathsCount++;
-        enemiesDeathsCountText.text = enemiesDeathsCount.ToString();
+        _enemyPassCount++;
+        enemiesPassCount.text = _enemyPassCount.ToString();
     }
 
     public void AddCoinCount()
     {
-        coinsCount++;
-        coinsCountText.text = coinsCount.ToString();
+        _coinsCount += 2;
+        coinsCount.text = _coinsCount.ToString();
     }
 }
