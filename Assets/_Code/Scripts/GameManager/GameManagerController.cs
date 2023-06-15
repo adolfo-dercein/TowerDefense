@@ -13,19 +13,19 @@ public class GameManagerController : MonoBehaviour
 
     public void AddEnemyPassCount()
     {
-        enemiesPassCount++;
-        enemiesPassCountText.text = enemiesPassCount.ToString();
+        //enemiesPassCount++;
+        //enemiesPassCountText.text = enemiesPassCount.ToString();
     }
 
     public void AddEnemyDeathCount()
     {
-        enemiesDeathsCount++;
-        enemiesDeathsCountText.text = enemiesDeathsCount.ToString();
+        //enemiesDeathsCount++;
+        //enemiesDeathsCountText.text = enemiesDeathsCount.ToString();
     }
 
     public void AddCoinCount()
     {
-        coinsCount++;
-        coinsCountText.text = coinsCount.ToString();
+        //coinsCount++;
+        //coinsCountText.text = coinsCount.ToString();
     }
 }

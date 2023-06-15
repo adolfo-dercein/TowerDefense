@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18284985, g: 0.22855043, b: 0.30696017, a: 1}
+  m_IndirectSpecularColor: {r: 0.18285061, g: 0.2285512, b: 0.30696124, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3312,9 +3312,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1053884136}
   - component: {fileID: 1053884135}
+  - component: {fileID: 1053884137}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3430,6 +3431,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053884137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053884134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b169cb5d066944c8f09118207fe186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesPassCountText: {fileID: 0}
+  enemiesDeathsCountText: {fileID: 0}
+  coinsCountText: {fileID: 0}
 --- !u!1001 &1053904346
 PrefabInstance:
   m_ObjectHideFlags: 0
