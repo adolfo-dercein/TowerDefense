@@ -36,6 +36,7 @@ namespace Assets._Code.Scripts.Enemy.States
             if(other.CompareTag(Tags.Bullet))
             {
                 health--;
+                enemyController.UpdateHealthBar(health, Parameters.EnemyParameters.InitialHealth);
                 if (health <= 0)
                 {
                     enemyController.SwitchState(enemyController.DeathState);
