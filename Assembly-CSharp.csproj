@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{28866EB0-7993-C171-348D-8535A8E3480D}</ProjectGuid>
+    <ProjectGuid>{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,30 +53,30 @@
     <UnityVersion>2021.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\States\BulletDestroyedState.cs" />
     <Compile Include="Assets\_Code\Scripts\Map\WaypointController.cs" />
     <Compile Include="Assets\_Code\Scripts\GameManager\GameManagerController.cs" />
+    <Compile Include="Assets\Art\Old Torch\Script\FlickLight.cs" />
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletBaseState.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\Parameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\BulletController.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemySpawnerController.cs" />
+    <Compile Include="Assets\_Code\Scripts\Util\Light\TorchController.cs" />
     <Compile Include="Assets\_Code\Scripts\Tower\CannonController.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\EnemyParameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\EnemyBaseState.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyAliveState.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyDeathState.cs" />
+    <Compile Include="Assets\_Code\Scripts\Util\Light\LightController.cs" />
     <Compile Include="Assets\_Code\Scripts\Tower\Bullet\States\BulletFireState.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\BulletParameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Parameters\CannonParameters.cs" />
     <Compile Include="Assets\_Code\Scripts\Util\Tags.cs" />
     <Compile Include="Assets\_Code\Scripts\Enemy\States\EnemyWinState.cs" />
-    <Compile Include="Assets\_Code\Scripts\Util\Light\TorchController.cs" />
-    <Compile Include="Assets\_Code\Scripts\Util\Light\LightController.cs" />
-    <Compile Include="Assets\Art\Old Torch\Script\FlickLight.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -703,6 +703,9 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -739,8 +742,8 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -757,6 +760,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
@@ -765,12 +771,6 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

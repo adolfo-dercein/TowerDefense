@@ -15,9 +15,15 @@ public class EnemyController : MonoBehaviour
 
     public Rigidbody body;
 
+
+    [SerializeField] HealthBar healthBar;
+
     void Start()
     {
         gameManagerController = GameObject.FindGameObjectWithTag(Tags.GameManager).GetComponent<GameManagerController>();
+        healthBar = GetComponentInChildren<HealthBar>();
+
+        healthBar.UpdateHealthBar(Parameters.EnemyParameters.InitialHealth, Parameters.EnemyParameters.InitialHealth);
 
         currentState = AliveState;
         currentState.EnterState(this);
@@ -42,5 +48,10 @@ public class EnemyController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         currentState.OnTriggerEnter(this, other);
+    }
+
+    public void UpdateHealthBar(float currentValue, float maxValue)
+    {
+        this.healthBar.UpdateHealthBar(currentValue, maxValue);
     }
 }
