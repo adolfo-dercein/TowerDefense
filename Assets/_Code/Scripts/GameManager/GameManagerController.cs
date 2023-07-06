@@ -1,31 +1,34 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManagerController : MonoBehaviour
+namespace Assets._Code.Scripts.GameManager
 {
-    public Text enemiesPassCount;
-    public Text enemyKillCount;
-    public Text coinsCount;
-
-    private int _enemyPassCount = 0;
-    private int _enemyKillCount = 0;
-    private int _coinsCount = 0;
-
-    public void AddEnemyKillCount()
+    public class GameManagerController : MonoBehaviour
     {
-        _enemyKillCount++;
-        enemyKillCount.text = _enemyKillCount.ToString();
-    }
+        public Text enemiesPassCount;
+        public Text enemyKillCount;
+        public Text coinsCount;
 
-    public void AddEnemyPassCount()
-    {
-        _enemyPassCount++;
-        enemiesPassCount.text = _enemyPassCount.ToString();
-    }
+        private int _enemyPassCount = 0;
+        private int _enemyKillCount = 0;
+        private int _coinsCount = 0;
 
-    public void AddCoinCount()
-    {
-        _coinsCount += 2;
-        coinsCount.text = _coinsCount.ToString();
+        public void AddEnemyKillCount()
+        {
+            _enemyKillCount++;
+            enemyKillCount.text = _enemyKillCount.ToString();
+        }
+
+        public void AddEnemyPassCount()
+        {
+            _enemyPassCount++;
+            enemiesPassCount.text = _enemyPassCount.ToString();
+        }
+
+        public void AddCoinCount()
+        {
+            _coinsCount += 2;
+            coinsCount.text = _coinsCount.ToString();
+        }
     }
 }

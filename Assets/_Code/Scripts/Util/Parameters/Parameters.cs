@@ -1,16 +1,17 @@
 
-using Assets._Code.Scripts.Util.Parameters;
-
-public static class Parameters
+namespace Assets._Code.Scripts.Util.Parameters
 {
-    static Parameters()
+    public static class Parameters
     {
-        EnemyParameters = new EnemyParameters();
-        CannonParameters = new CannonParameters();
-        BulletParameters = new BulletParameters();
-    }
+        static Parameters()
+        {
+            EnemyParameters = new EnemyParameters();
+            CannonParameters = new CannonParameters();
+            BulletParameters = new BulletParameters();
+        }
 
-    public static EnemyParameters EnemyParameters;
-    public static CannonParameters CannonParameters;
-    public static BulletParameters BulletParameters;
+        public static EnemyParameters EnemyParameters;
+        public static CannonParameters CannonParameters;
+        public static BulletParameters BulletParameters;
+    }
 }
